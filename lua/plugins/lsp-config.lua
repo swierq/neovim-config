@@ -9,7 +9,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "gopls", "terraformls", "tflint", "yamlls", "templ" },
+				ensure_installed = { "lua_ls", "gopls", "terraformls", "tflint", "yamlls", "templ", "ansiblels" },
 			})
 		end,
 	},
@@ -54,7 +54,7 @@ return {
 			vim.keymap.set("n", "<leader>f", function()
 				vim.lsp.buf.format({ async = true })
 			end, opts)
-      vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+			vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
 		end,
 	},
 }
