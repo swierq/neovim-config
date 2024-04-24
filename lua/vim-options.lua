@@ -3,7 +3,7 @@ vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set autoindent")
-vim.cmd("set number")
+vim.cmd("set number relativenumber")
 vim.g.mapleader = " "
 vim.keymap.set("n", "=", [[<cmd>vertical resize +5<cr>]]) -- make the window biger verticallydd
 vim.keymap.set("n", "-", [[<cmd>vertical resize -5<cr>]]) -- make the window smaller vertically
