@@ -31,6 +31,17 @@ vim.filetype.add({
 	},
 })
 
+vim.api.nvim_create_user_command(
+  "Aen",
+  "!ansible-vault encrypt %",
+  {bang = true, desc = "Encrypt file with ansible-vault"}
+)
+
+vim.api.nvim_create_user_command(
+  "Ade",
+  "!ansible-vault decrypt %",
+  {bang = true, desc = "Encrypt file with ansible-vault"}
+)
 -- vim.filetype.add({
 -- 	extension = {
 -- 		yml = yaml_ft,
