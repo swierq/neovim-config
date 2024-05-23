@@ -6,10 +6,10 @@ vim.cmd("set autoindent")
 vim.cmd("set number relativenumber")
 vim.cmd("setlocal spell spelllang=en_us")
 vim.g.mapleader = " "
-vim.keymap.set("n", "=", [[<cmd>vertical resize +5<cr>]]) -- make the window biger verticallydd
-vim.keymap.set("n", "-", [[<cmd>vertical resize -5<cr>]]) -- make the window smaller vertically
-vim.keymap.set("n", "+", [[<cmd>horizontal resize +2<cr>]]) -- make the window bigger horizontally by pressing shift and =
-vim.keymap.set("n", "_", [[<cmd>horizontal resize -2<cr>]]) -- make the window smaller horizontally by pressing shift and -
+-- vim.keymap.set("n", "=", [[<cmd>vertical resize +5<cr>]]) -- make the window biger verticallyddoptopt
+-- vim.keymap.set("n", "-", [[<cmd>vertical resize -5<cr>]]) -- make the window smaller vertically
+-- vim.keymap.set("n", "+", [[<cmd>horizontal resize +2<cr>]]) -- make the window bigger horizontally by pressing shift and =
+-- vim.keymap.set("n", "_", [[<cmd>horizontal resize -2<cr>]]) -- make the window smaller horizontally by pressing shift and -
 
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
