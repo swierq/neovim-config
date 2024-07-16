@@ -1,6 +1,8 @@
 local function yaml_ft(path, bufnr)
 	-- get content of buffer as string
-	local content = vim.filetype.getlines(bufnr)
+	-- local content = vim.filetype.getlines(bufnr)
+	local content = vim.api.nvim_buf_get_lines(0, 0, vim.api.nvim_buf_line_count(0), false)
+
 	if type(content) == "table" then
 		content = table.concat(content, "\n")
 	end
@@ -11,12 +13,12 @@ local function yaml_ft(path, bufnr)
 		return "yaml.ansible"
 	end
 	-- check for known ansible playbook text and if found, return yaml.ansible
-	local regex = vim.regex("hosts:\\|tasks:")
-	if regex and regex:match_str(content) then
-		return "yaml.ansible"
-	end
-
-	-- return yaml if nothing else
+	-- local regex = vim.regex("hosts:\\|tasks:")
+	-- if regex and regex:match_str(content) then
+	-- 	return "yaml.ansible"
+	-- end
+	--
+	-- -- return yaml if nothing else
 	return "yaml"
 end
 
