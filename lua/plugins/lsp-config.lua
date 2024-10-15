@@ -18,7 +18,7 @@ return {
 					"templ",
 					"ansiblels",
 					"htmx",
-					"tsserver",
+					"ts_ls",
 					"tailwindcss",
 				},
 			})
