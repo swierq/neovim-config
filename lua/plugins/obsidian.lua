@@ -20,7 +20,7 @@ return {
 		workspaces = {
 			{
 				name = "notes",
-				path = "~/notes",
+				path = "~/repos/gh/swierq/notes",
 			},
 		},
 		-- notes_subdir = "notes",
