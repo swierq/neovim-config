@@ -20,6 +20,7 @@ return {
 					"htmx",
 					"ts_ls",
 					"tailwindcss",
+					"pylsp",
 				},
 			})
 		end,
@@ -43,6 +44,9 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.tflint.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.pylsp.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.yamlls.setup({
