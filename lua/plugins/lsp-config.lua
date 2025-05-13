@@ -21,6 +21,8 @@ return {
 					"ts_ls",
 					"tailwindcss",
 					"pylsp",
+					"kotlin_language_server",
+					"gradle_ls",
 				},
 			})
 		end,
@@ -81,6 +83,12 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.tailwindcss.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.kotlin_language_server.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.gradle_ls.setup({
 				capabilities = capabilities,
 			})
 
