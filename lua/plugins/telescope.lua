@@ -18,6 +18,8 @@ return {
 			vim.keymap.set("n", "<leader>gb", builtin.git_branches, { desc = "Git branches" })
 			vim.keymap.set("n", "<leader>gt", builtin.git_status, { desc = "Git status" })
 			vim.keymap.set("n", "<leader>cc", builtin.commands, { desc = "Commands" })
+			vim.keymap.set("n", "<leader>fq", builtin.quickfix, { desc = "Commands" })
+			vim.keymap.set("n", "<leader>qh", builtin.quickfixhistory, { desc = "Commands" })
 		end,
 	},
 	{
