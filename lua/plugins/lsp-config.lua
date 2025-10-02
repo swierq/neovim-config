@@ -30,28 +30,28 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			local lspconfig = require("lspconfig")
+			-- local lspconfig = require("lspconfig")
 			local opts = {}
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-			lspconfig.lua_ls.setup({
+			vim.lsp.config("lua_ls", {
 				capabilities = capabilities,
 			})
-			lspconfig.gopls.setup({
+			vim.lsp.config("gopls", {
 				capabilities = capabilities,
 			})
-			lspconfig.templ.setup({
+			vim.lsp.config("templ", {
 				capabilities = capabilities,
 			})
-			lspconfig.terraformls.setup({
+			vim.lsp.config("terraformls", {
 				capabilities = capabilities,
 			})
-			lspconfig.tflint.setup({
+			vim.lsp.config("tflint", {
 				capabilities = capabilities,
 			})
-			lspconfig.pylsp.setup({
+			vim.lsp.config("pylsp", {
 				capabilities = capabilities,
 			})
-			lspconfig.yamlls.setup({
+			vim.lsp.config("yamlls", {
 				capabilities = capabilities,
 				settings = {
 					yaml = {
@@ -73,22 +73,22 @@ return {
 					},
 				},
 			})
-			lspconfig.lemminx.setup({
+			vim.lsp.config("lemminx", {
 				capabilities = capabilities,
 			})
-			lspconfig.htmx.setup({
+			vim.lsp.config("htmx", {
 				capabilities = capabilities,
 			})
-			lspconfig.ts_ls.setup({
+			vim.lsp.config("ts_ls", {
 				capabilities = capabilities,
 			})
-			lspconfig.tailwindcss.setup({
+			vim.lsp.config("tailwindcss", {
 				capabilities = capabilities,
 			})
-			lspconfig.kotlin_language_server.setup({
+			vim.lsp.config("kotlin_language_server", {
 				capabilities = capabilities,
 			})
-			lspconfig.gradle_ls.setup({
+			vim.lsp.config("gradle_ls", {
 				capabilities = capabilities,
 			})
 
