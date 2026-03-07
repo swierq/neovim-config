@@ -23,6 +23,11 @@ return {
 				path = "~/repos/gh/swierq/notes",
 			},
 		},
+		templates = {
+			subdir = "templates",
+			date_format = "%Y-%m-%d",
+			time_format = "%H:%M",
+		},
 		-- notes_subdir = "notes",
 		-- see below for full list of options 👇
 	},
