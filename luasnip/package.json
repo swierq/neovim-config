@@ -1,0 +1,19 @@
+{
+	"name": "swierq",
+	"contributes": {
+		"snippets": [
+			{
+				"language": [
+					"all"
+				],
+				"path": "./swierq/all.json"
+			},
+			{
+				"language": [
+					"go"
+				],
+				"path": "./swierq/go.json"
+			}
+		]
+	}
+}

@@ -20,6 +20,7 @@ return {
 		config = function()
 			local cmp = require("cmp")
 			require("luasnip.loaders.from_vscode").load()
+			require("luasnip.loaders.from_vscode").load({ paths = "./luasnip/" })
 			cmp.setup({
 				snippet = {
 					expand = function(args)
