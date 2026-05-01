@@ -1,13 +1,19 @@
 return {
 	"yetone/avante.nvim",
 	event = "VeryLazy",
-	lazy = false,
+	lazy = true,
 	version = false, -- Set this to "*" to always pull the latest release version, or set it to false to update to the latest code changes.
 	opts = {
 		-- add any opts here
 		-- for example
 		provider = "copilot",
 		providers = {
+			copilot = {
+				-- optional, if you want to use the copilot provider
+				-- make sure to set up copilot.lua properly
+				-- see
+				model = "claude-sonnet-4.6",
+			},
 			openai = {
 				endpoint = "https://api.openai.com/v1",
 				model = "gpt-4o", -- your desired model (or use gpt-4o, etc.)
