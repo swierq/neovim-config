@@ -27,6 +27,8 @@ return {
 				"json",
 				"xml",
 				"toml",
+				"markdown",
+				"markdown_inline",
 			},
 			auto_install = true,
 			sync_install = false,

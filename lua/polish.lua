@@ -48,6 +48,14 @@ vim.api.nvim_create_user_command(
 vim.opt.spelllang = "en_us"
 vim.opt.spell = true
 
+-- Disable Treesitter for Avante filetypes to prevent parser errors
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "Avante", "AvanteInput" },
+	callback = function()
+		vim.treesitter.stop()
+	end,
+})
+
 -- vim.filetype.add({
 -- 	extension = {
 -- 		yml = yaml_ft,
