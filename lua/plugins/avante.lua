@@ -12,7 +12,7 @@ return {
 				-- optional, if you want to use the copilot provider
 				-- make sure to set up copilot.lua properly
 				-- see
-				model = "claude-sonnet-4.6",
+				model = "claude-sonnet-5.5",
 			},
 			openai = {
 				endpoint = "https://api.openai.com/v1",
@@ -31,6 +31,8 @@ return {
 		"stevearc/dressing.nvim",
 		"nvim-lua/plenary.nvim",
 		"MunifTanjim/nui.nvim",
+		"ColinKennedy/mega.cmdparse", -- required by avante commands
+		"ColinKennedy/mega.logging", -- required by mega.cmdparse
 		--- The below dependencies are optional,
 		"nvim-telescope/telescope.nvim", -- for file_selector provider telescope
 		"hrsh7th/nvim-cmp", -- autocompletion for avante commands and mentions
